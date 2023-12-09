@@ -188,13 +188,66 @@ write a function to find the majority element
 (an element that appears more than n/2 times).
 """
 
+#Using statistics - mode
+
+import statistics
+from statistics import mode
+def majority_element(list):
+    return(mode(list))
+list=[1,2,1,2,2,3]
+print(f"The list to find the majority element:{list}")
+print(f"The majority element:{majority_element(list)}\n")
+
 """
 10. Sort List of 0s, 1s, and 2s
 Given a list containing only 0s, 1s, and 2s
 write a function to sort the list in linear time.
 """
+
+#Using sort()
+
+print("Write a function to sort the list of 0s, 1s and 2s in linear time")
+
 def sort_list(list):
     print(f"Original list:{list}")
     list.sort()
     return list
-print(f"Sorted list of 0s, 1s and 2s:{sort_list([0,1,2,0,2,1,1,0])}")
+print(f"Sorted list of 0s, 1s and 2s:{sort_list([0,1,2,0,2,1,1,0])}\n")
+
+#Using for and while loop
+
+print("Write a function to sort the list of 0s, 1s and 2s in linear time")
+
+def sortlist(list,n): #Function to sort the 0s, 1s and 2s in the list
+    count0=0 # Initializing the count0=0
+    count1=0 # Initializing the count1=0
+    count2=0 # Initializing the count2=0
+    
+    for i in range(n): #To count the no. of 0s, 1s and 2s
+        if list[i]==0: # If the list[i] value is 0 
+            count0+=1  # count0 value is increased by 1
+        elif list[i]==1:  # If the list[i] value is 1 
+            count1+=1     # count1 value is increased by 1
+        else:
+            count2+=1     # count2 value is increased by 1
+    
+    i=0
+    while(count0>0): #To update the list
+        list[i]=0    #Store all 0's in the beginning
+        i+=1
+        count0-=1
+    while(count1>0): #Then all 1's 
+        list[i]=1
+        i+=1
+        count1-=1
+    while(count2>0): #Finally all 2's
+        list[i]=2
+        i+=1
+        count2-=1
+
+    return list
+    
+list=[0,1,1,2,0,1,2,1,2,0,0,0,1]
+print(f"The Original list:{list}")
+n=len(list)
+print(f"The Sorted list:{sortlist(list,n)}")
