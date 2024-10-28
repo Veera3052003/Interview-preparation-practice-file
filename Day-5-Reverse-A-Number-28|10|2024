@@ -1,0 +1,18 @@
+Code:
+
+n=int(input("Enter a number: \n"))
+print("Original_num:",n)
+reverse_num=0
+
+while n>0:
+    last_digit=n%10
+    reverse_num=reverse_num*10+last_digit
+    n//=10
+print("\nReversed number:",reverse_num)
+
+Output:
+
+Enter a number: 
+Original_num: 357282652882625
+
+Reversed number: 526288256282753
