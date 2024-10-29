@@ -1,0 +1,27 @@
+Code:
+
+n=int(input("Enter the number: \n"))
+original_num=n
+ams_num=0
+num_digits=len(str(n))
+
+while n>0:
+    digit=n%10
+    ams_num+=digit**num_digits
+    n//=10
+    
+if ams_num==original_num:
+    print(original_num,"=",ams_num,"is a amstrong number")
+else:
+    print(original_num,"=",ams_num,"is not a amstrong number")
+    
+Output:
+
+Enter the number: 
+153 = 153 is a amstrong number
+
+Enter the number: 
+9474 = 9474 is a amstrong number
+
+Enter the number: 
+4979 = 15779 is not a amstrong number
