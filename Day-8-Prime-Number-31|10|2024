@@ -1,0 +1,29 @@
+Code:
+
+print("Check Prime Number\n")
+n=int(input("Enter a number: \n"))
+count=0
+for i in range(1,n+1):
+    if n%i==0:
+        count+=1
+        #print(i,"->",count)
+if count==2:
+    print(n," is a prime number")
+else:
+    print(n," is not a prime number")
+    
+Output:
+
+O/p 1:
+
+Check Prime Number
+
+Enter a number: 
+5  is a prime number
+
+O/p 2:
+
+Check Prime Number
+
+Enter a number: 
+15  is not a prime number
