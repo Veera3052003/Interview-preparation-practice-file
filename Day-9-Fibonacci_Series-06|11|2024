@@ -1,0 +1,15 @@
+Code:
+
+print("Fibonacci Series\n")
+n=int(input("Enter the number:\n"))
+a,b=0,1
+for _ in range(n):
+    print(a, end=" ")
+    a,b=b,a+b
+
+Output:
+
+Fibonacci Series
+
+Enter the number: 8
+0 1 1 2 3 5 8 13 
