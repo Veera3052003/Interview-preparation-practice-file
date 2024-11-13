@@ -1,0 +1,22 @@
+Code:
+
+print("Fibonacci Series using recursive function\n")
+def fib(n):
+    if n<=0:
+        return 0
+    elif n==1:
+        return 1
+    else:
+        return fib(n-1)+fib(n-2)
+        
+num=int(input("Enter number of terms:\n"))
+
+for i in range(num):
+    print(fib(i),end=" ")   
+
+Output:
+
+Fibonacci Series using recursive function
+
+Enter number of terms:
+0 1 1 2 3 5 8 
