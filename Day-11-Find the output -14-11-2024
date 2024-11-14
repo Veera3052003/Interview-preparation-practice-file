@@ -1,0 +1,15 @@
+Code:
+
+class Device:
+    def printSize(self):
+        print("medium")
+        
+class Tablet(Device):
+    pass
+    
+tablet=Tablet()
+tablet.printSize()
+
+Output:
+
+medium
