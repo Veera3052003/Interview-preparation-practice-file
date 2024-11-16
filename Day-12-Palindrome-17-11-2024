@@ -1,0 +1,29 @@
+Code:
+
+print("Check whether palindrome or not\n")
+n=int(input("Enter a number:\n"))
+original_num=n
+rev_num=0
+while n>0:
+    rem=n%10
+    rev_num=rev_num*10+rem
+    n=n//10
+print("Reverse num:",rev_num)
+if(original_num==rev_num):
+    print("It is a palindrome")
+else:
+    print("It is not a palindrome")
+    
+Output:
+
+Check whether palindrome or not
+
+Enter a number:
+Reverse num: 12321
+It is a palindrome
+
+Check whether palindrome or not
+
+Enter a number:
+Reverse num: 52846
+It is not a palindrome
