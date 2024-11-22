@@ -1,0 +1,31 @@
+Code:
+
+def greater_num(a,b,c):
+    if(a>b>c):
+        print(a,"is greater number")
+    elif(b>a>c):
+        print(b,"is greater number")
+    else:
+        print(c,"is greater number")
+        
+n1=int(input("Enter number 1:"))
+n2=int(input("Enter number 2:"))
+n3=int(input("Enter number 3:"))
+greater_num(n1,n2,n3)
+
+Output:
+
+Enter number 1:5
+Enter number 2:6
+Enter number 3:7
+7 is greater number
+
+Enter number 1:5
+Enter number 2:7
+Enter number 3:6
+7 is greater number
+
+Enter number 1:7
+Enter number 2:6
+Enter number 3:5
+7 is greater number
