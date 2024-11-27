@@ -1,0 +1,23 @@
+Code:
+
+def check_binary(n):
+    while n>0:
+        digit=n%10
+        if digit>=2:
+            return False
+        n//=10
+    return True
+        
+num=int(input("Enter the number:"))
+if check_binary(num):
+    print(num,"is a binary number")
+else:
+    print(num,"is not a binary number")
+
+Output:
+
+Enter the number:2673848
+2673848 is not a binary number
+
+Enter the number:10100101010
+10100101010 is a binary number
