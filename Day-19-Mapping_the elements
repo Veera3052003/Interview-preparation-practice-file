@@ -1,0 +1,10 @@
+Output:
+
+translation=str.maketrans("aeiou","àêìóù")
+sentence="a speech sound produced by human beings when the breath flows out through the mouth without being blocked by the teeth, tounge, or lips"
+expected_output=sentence.translate(translation)
+print(expected_output)
+
+Code:
+
+à spêêch sóùnd pródùcêd by hùmàn bêìngs whên thê brêàth flóws óùt thróùgh thê móùth wìthóùt bêìng blóckêd by thê têêth, tóùngê, ór lìps
