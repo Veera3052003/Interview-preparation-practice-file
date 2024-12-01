@@ -1,0 +1,33 @@
+Code:
+
+def interpolate_var(name,age):
+    if age>=18:
+        print(f"Hi {name}.\nYour age is {age}.\nCongratulations you are eligible to Vote.")#f-string
+    else:
+        print("Hi {}.\nYour age is {}.\nSorry you are not eligible to vote.". format(name,age))
+print("Program to interpolate a variable into a string by using f-string and format\n")
+name=input("Enter your name:")
+age=int(input("Enter your age:"))
+interpolate_var(name,age)
+
+Output:
+
+Case 1:
+
+Program to interpolate a variable into a string by using f-string and format
+
+Enter your name:veera
+Enter your age:21
+Hi veera.
+Your age is 21.
+Congratulations you are eligible to Vote.
+
+Case 2:
+
+Program to interpolate a variable into a string by using f-string and format
+
+Enter your name:Veera
+Enter your age:17
+Hi Veera.
+Your age is 17.
+Sorry you are not eligible to vote.
