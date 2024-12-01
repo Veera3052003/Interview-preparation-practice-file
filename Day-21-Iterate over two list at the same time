@@ -1,0 +1,16 @@
+Code:
+
+l1=['a','e','i','o','u']
+l2=['à','é','í','ó','ú']
+for i in range(len(l1)):
+    for j in range(i+1):
+        print(l1[i],"-->",l2[i])
+        break
+
+Output:
+
+a --> à
+e --> é
+i --> í
+o --> ó
+u --> ú
