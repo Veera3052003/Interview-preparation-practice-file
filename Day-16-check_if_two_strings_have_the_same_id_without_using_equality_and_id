@@ -1,0 +1,30 @@
+Code:
+
+import sys
+def check_id(str1,str2):
+    if str1 is str2:
+        print(str1,"and",str2,"has same id.")
+    else:
+        print(str1,"and",str2,"has different id.")
+print("Program to check whether both the strings has the same id\n")
+str1=sys.intern(input("Enter string1:"))
+str2=sys.s.intern(input("Enter string2:"))
+check_id(str1,str2)
+
+Output:
+
+Case 1:
+
+Program to check whether both the strings has the same id
+
+Enter string 1: Python
+Enter string 2: python
+word and word has different id.
+
+Case 2:
+
+Program to check whether both the strings has the same id
+
+Enter string 1: Python
+Enter string 2: Python
+word and word has same id
