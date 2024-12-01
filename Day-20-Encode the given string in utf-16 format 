@@ -1,0 +1,13 @@
+Code:
+
+def conv_encode(string):
+    print(string.encode('utf-16'))
+print("Program to convert the string into utf-16 format")
+str=input("Enter your name:")
+conv_encode(str)
+
+Output:
+
+Program to convert the string into utf-16 format
+Enter your name:Veeralakshmi
+b'\xff\xfeV\x00e\x00e\x00r\x00a\x00l\x00a\x00k\x00s\x00h\x00m\x00i\x00'
