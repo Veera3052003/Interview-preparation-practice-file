@@ -1,0 +1,22 @@
+Code:
+
+def high_low_ascii(str):
+    low_ascii=str[0]
+    high_ascii=str[0]
+    for i in range(len(str)):
+        if str[i]<low_ascii:
+            low_ascii=str[i]
+        else:
+            high_ascii=str[i]
+    print(f"Lower ASCII value is {low_ascii}.\nHighest ASCII value is {high_ascii}.")
+print(f"Program to return the character with the highest and lowest ASCII value without using ord() for the given string\n")
+string=input("Enter your name:")
+high_low_ascii(string)
+
+Output:
+
+Program to return the character with the highest and lowest ASCII value without using ord() for the given string
+
+Enter your name:Veeralaksmi
+Lower ASCII value is V.
+Highest ASCII value is i.
