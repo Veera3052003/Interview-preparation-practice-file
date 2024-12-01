@@ -1,0 +1,13 @@
+Code:
+
+l1={'a':'à','e':'è','i':'ì','o':'ó','u':'ú'}
+for index,(key,value) in enumerate(l1.items()):
+    print("index:",index,"-->","key:",key,"value:",value)
+
+Output:
+
+index: 0 --> key: a value: à
+index: 1 --> key: e value: è
+index: 2 --> key: i value: ì
+index: 3 --> key: o value: ó
+index: 4 --> key: u value: ú
