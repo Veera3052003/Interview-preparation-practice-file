@@ -1,3 +1,16 @@
+Question:
+
+Implement classes Automobile, FamilyAutoSegment and LuxuryAutoSegment. FamilyAutoSegment and LuxuryAutoSegment classes inherits from the Automobile class. The attribute category is used to differentiate between segments. The categories are "family car"(default) and "luxury car"
+
+a. Step 1: Define a give_details() method in the Automobile class that gives the class name and category
+
+b. Step 2: The common attributes irrespective of segments are make, colour and year. The cars in the FamilyAutoSegment are characterized by mileage and in the LuxuryAutoSegment by engine capacity. Initialize the attributes appropriately. Implement a method show_attributes() in the Automobile class that gives the make, colour, year, and mileage/ engine capacity
+
+c. Extend the show_attributes() methods in the FamilyAutoSegment and
+LuxuryAutoSegment classes to display the attributes: 'calling from the class :
+Internal to Wipro
+FamilyAutoSegment/ LuxuryAutoSegment' and the then the rest of the attributes
+
 Code:
 
 class Automobile:
