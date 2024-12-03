@@ -1,0 +1,28 @@
+Code:
+
+def find_repeating_char(string):
+    empty_list=[]
+    for i in range(len(string)):
+        if string[i] not in empty_list:
+            empty_list+=string[i]
+            if len(empty_list)==len(string):
+                print("1")
+                break
+        else:
+            print(f"{string[i]} is repeated.")
+            break
+        
+name=input("Enter your name:")
+find_repeating_char(name)
+
+Output:
+
+Case 1:
+
+Enter your name:veeralakshmi
+e is repeated.
+
+Case 2:
+
+Enter your name:VEJMCP
+1
