@@ -1,0 +1,103 @@
+Code:
+
+class Automobile:
+    def given_details(self, category="family car"):
+        self.class_name=input("Enter the class name(FamilyAutoSegment / LuxuryAutoSegment):")
+        self.category=input("Enter the category(family car/luxury car):")
+        if not self.category.strip():
+            self.category=category 
+        if self.class_name not in ["FamilyAutoSegment","LuxuryAutoSegment"]:
+            print("Enter the class name properly")
+            self.given_details()
+        else:
+            self.make=input("Enter the make of the automobile:")
+            self.color=input("Enter the color of the automobile:")
+            self.year=int(input("Enter the year of the automobile:"))
+            self.age=int(input("Enter the age of the automobile:"))
+            
+            if self.class_name=="FamilyAutoSegment":
+                self.mileage=input("Enter the mileage of the automobile(low/high mileage):")
+            else:
+                self.engine_capacity=input("Enter the engine capacity of the automobile(big/small engine):")
+                
+    def show_attributes(self):
+        
+        print("Name of the class:",a.class_name)
+        print("Category of the automobile:",a.category)
+        print("Make of the automobile:",a.make)
+        print("Color of the automobile:",a.color)
+        print("Year of the automobile:",a.year)
+        print("Age of the automobile:",a.age)
+        if a.class_name=="FamilyAutoSegment":
+            print("Mileage of the automobile:",a.mileage)
+        else:
+            print("Engine capacity of the automobile:",a.engine_capacity)
+            
+class FamilyAutoSegment(Automobile ):
+    
+    def show_attributes(self):
+        print("*"*25)
+        print(f"calling from the class: Internal to Wipro {self.__class__.__name__}")
+        super().show_attributes()
+
+            
+class LuxuryAutoSegment(Automobile ):
+    
+    def show_attributes(self):
+        print("*"*25)
+        print(f"calling from the class: Internal to Wipro {self.__class__.__name__}")
+        super().show_attributes()
+        
+a=Automobile()
+f=FamilyAutoSegment()
+l=LuxuryAutoSegment()
+a.given_details()
+if a.class_name=="FamilyAutoSegment":
+    f.show_attributes()
+else:
+    l.show_attributes()
+
+
+
+Output:
+
+Case 1:
+
+Enter the class name(FamilyAutoSegment / LuxuryAutoSegment):Family
+Enter the category(family car/luxury car):
+Enter the class name properly
+Enter the class name(FamilyAutoSegment / LuxuryAutoSegment):LuxuryAutoSegment
+Enter the category(family car/luxury car):
+Enter the make of the automobile:Tata
+Enter the color of the automobile:Blue
+Enter the year of the automobile:2003
+Enter the age of the automobile:21
+Enter the engine capacity of the automobile(big/small engine):small
+*************************
+calling from the class: Internal to Wipro LuxuryAutoSegment
+Name of the class: LuxuryAutoSegment
+Category of the automobile: family car
+Make of the automobile: Tata
+Color of the automobile: Blue
+Year of the automobile: 2003
+Age of the automobile: 21
+Engine capacity of the automobile: small
+
+Case 2:
+
+Enter the class name(FamilyAutoSegment / LuxuryAutoSegment):FamilyAutoSegment
+Enter the category(family car/luxury car):luxury car
+Enter the make of the automobile:Toyota
+Enter the color of the automobile:Navy Blue
+Enter the year of the automobile:1997
+Enter the age of the automobile:28
+Enter the mileage of the automobile(low/high mileage):high
+*************************
+calling from the class: Internal to Wipro FamilyAutoSegment
+Name of the class: FamilyAutoSegment
+Category of the automobile: luxury car
+Make of the automobile: Toyota
+Color of the automobile: Navy Blue
+Year of the automobile: 1997
+Age of the automobile: 28
+Mileage of the automobile: high
