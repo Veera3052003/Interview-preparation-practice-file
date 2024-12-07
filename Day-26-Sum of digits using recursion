@@ -1,0 +1,15 @@
+Code:
+
+def sum_of_digits_recursion(n):
+    if n<10:
+        return n
+    else:
+        return (n%10)+sum_of_digits_recursion(n//10)
+        
+num=int(input("Enter a number: "))  
+print(sum_of_digits_recursion(num))
+
+Output:
+
+Enter a number: 2435
+14
