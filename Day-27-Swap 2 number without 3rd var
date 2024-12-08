@@ -1,0 +1,57 @@
+Code 1:
+
+def swap_two_num_without_third_var(n1,n2):
+    print("Before swapping")
+    print(f"Num 1:{n1}")
+    print(f"Num 2:{n2}")
+    n1=n1+n2
+    n2=n1-n2
+    n1=n1-n2
+    print("After swapping")
+    print(f"Num 1:{n1}")
+    print(f"Num 2:{n2}")
+    
+num1=int(input("Enter num 1: "))
+num2=int(input("Enter num 2: "))
+
+swap_two_num_without_third_var(num1,num2)
+
+Output:
+
+Enter num 1: 246
+Enter num 2: 577
+Before swapping
+Num 1:246
+Num 2:577
+After swapping
+Num 1:577
+Num 2:246
+
+
+Code 2:
+
+def swap_two_num_without_third_var(n1,n2):
+    print("Before swapping")
+    print(f"Num 1:{n1}")
+    print(f"Num 2:{n2}")
+    n1,n2=n2,n1
+    print("After swapping")
+    print(f"Num 1:{n1}")
+    print(f"Num 2:{n2}")
+    
+num1=int(input("Enter num 1: "))
+num2=int(input("Enter num 2: "))
+
+swap_two_num_without_third_var(num1,num2)
+
+
+Output:
+
+Enter num 1: 246
+Enter num 2: 577
+Before swapping
+Num 1:246
+Num 2:577
+After swapping
+Num 1:577
+Num 2:246
