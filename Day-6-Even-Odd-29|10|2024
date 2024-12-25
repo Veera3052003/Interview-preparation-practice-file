@@ -6,14 +6,14 @@ n=int(input("Enter a number: \n"))
 if n%2==0:
     print(n," is a even number")
 else:
-    print(n," is not a even number")
+    print(n," is a odd number")
            
 Output:
 
 Check whether the given number is even / odd
 Enter a number: 
-45  is a even number
+45  is a odd number
 
 Check whether the given number is even / odd
 Enter a number: 
-4  is not a even number
+4  is a even number
