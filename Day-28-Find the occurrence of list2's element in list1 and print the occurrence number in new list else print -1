@@ -1,0 +1,21 @@
+# Define the lists
+list1 = [1, 2, 3, 42, 5, 7, 9, 10, 67, 35]
+list2 = [42, 9, 67, 2, 8]
+
+# Initialize the output list
+output = []
+
+# Iterate through each element in list2
+for element in list2:
+    if element in list1:
+        # Find the 1-based index of the element
+        index = list1.index(element) + 1
+        output.append(index)
+        # Remove the element from the specific location
+        list1.pop(index - 1)
+    else:
+        # Append -1 if the element is not in list1
+        output.append(-1)
+
+# Print the output
+print(output)
