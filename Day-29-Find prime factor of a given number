@@ -1,0 +1,27 @@
+Code:
+
+def prime_factor(num):
+    
+    empty_list=[]
+    divisor=2
+    
+    while num>1:
+        
+        if num%divisor==0:
+            empty_list.append(divisor)
+            num=num//divisor
+        
+        if num%divisor!=0:
+            divisor+=1
+       
+    return empty_list
+               
+print("Prime factors of the given number\n")
+n=int(input("Enter a number:"))
+print(prime_factor(n))
+
+Output:
+Prime factors of the given number
+
+Enter a number:56
+[2, 2, 2, 7]
