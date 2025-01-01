@@ -1,0 +1,29 @@
+Code:
+
+def star_pattern(n):
+    
+    for i in range(1,n+1):
+        space=n-i
+        print(" "*space,i*"* ")
+        
+    for i in range(n-1,0,-1):
+        space=n-i
+        print(" "*space,i*"* ")
+    
+num=int(input("Enter the number:"))
+star_pattern(num)
+
+
+
+Output:
+
+Enter the number:5
+     * 
+    * * 
+   * * * 
+  * * * * 
+ * * * * * 
+  * * * * 
+   * * * 
+    * * 
+     * 
